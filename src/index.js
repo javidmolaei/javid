@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import TabPanel from './component/TabPanel';
+import ColorTabs from './component/ColorTabs';
+import About from './component/About';
+import AboutMe from './component/AboutMe';
+import Interests from './component/Interests';
+import MediaCard from './component/MediaCard';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    {/* <ColorTabs /> */}
+    <ColorTabs />
+    <About />
+    <AboutMe />
+    <Interests />
+    {/* <MediaCard /> */}
   </React.StrictMode>
 );
 

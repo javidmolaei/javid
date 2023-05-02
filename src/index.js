@@ -9,6 +9,7 @@ import About from './component/About';
 import AboutMe from './component/AboutMe';
 import Interests from './component/Interests';
 import MediaCard from './component/MediaCard';
+import Project from './component/Project';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
     <About />
     <AboutMe />
     <Interests />
+    <Project />
     {/* <MediaCard /> */}
   </React.StrictMode>
 );

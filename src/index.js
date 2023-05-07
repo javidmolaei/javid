@@ -10,6 +10,8 @@ import AboutMe from './component/AboutMe';
 import Interests from './component/Interests';
 import MediaCard from './component/MediaCard';
 import Project from './component/Project';
+import GetIn from './component/GetIn';
+import Certificate from './component/Certificate';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,10 +20,12 @@ root.render(
     {/* <ColorTabs /> */}
     <ColorTabs />
     <About />
+    <Certificate />
     <AboutMe />
     <Interests />
     <Project />
     {/* <MediaCard /> */}
+    <GetIn />
   </React.StrictMode>
 );
 

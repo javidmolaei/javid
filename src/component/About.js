@@ -9,7 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Button from '@mui/material/Button';
 
 
-export default function ColorTabs() {
+export default function About() {
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
     ...theme.typography.body2,
@@ -41,16 +41,13 @@ export default function ColorTabs() {
 
       <Grid container spacing={3} sx={{ flexGrow: 1, marginTop: 5 }}>
         <Grid xs={6} xsOffset={3} md={2} mdOffset={0}>
-          <IconButton color="default" aria-label="linkedin" component="label" style={{ color: 'black'}}>
-            <input hidden accept="image/*" type="file" />
+          <IconButton color="default" aria-label="linkedin" component="label" style={{ color: 'black'}} >
             <LinkedInIcon />
           </IconButton>
           <IconButton color="default" aria-label="github" component="label" style={{ color: 'black'}}>
-            <input hidden accept="image/*" type="file" />
             <GitHubIcon />
           </IconButton>
           <IconButton color="default" aria-label="instagram" component="label" style={{ color: 'black'}}>
-            <input hidden accept="image/*" type="file" />
             <InstagramIcon />
           </IconButton>
         </Grid>

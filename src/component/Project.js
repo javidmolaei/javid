@@ -1,9 +1,15 @@
 import * as React from "react";
 import Grid from "@mui/material/Unstable_Grid2";
 import Logo from "../assest/logo.png";
+import Pm from "../assest/policeman.png";
 import html from "../assest/html.png";
+import java from "../assest/java.png";
+import javid from "../assest/javid.png";
+import uruz from "../assest/uruzCF.jpg";
+import oracle from "../assest/oracle.png";
 import css from "../assest/css-3.png";
 import figma from "../assest/figma.png";
+import flag from "../assest/flag.png";
 import photoshop from "../assest/photoshop.png";
 import physics from "../assest/physics.png";
 import Button from '@mui/material/Button';
@@ -22,9 +28,9 @@ export default function Project() {
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={7}>
           <img
-            src={Logo}
+            src={javid}
             alt="web pro"
-            style={{ height: 300, width: 700, borderStyle: "groove" }}
+            style={{ height: 300, width: 700, borderRadius: 30, objectFit: "cover", objectPosition: "right"}}
           />
         </Grid>
         <Grid
@@ -114,53 +120,27 @@ export default function Project() {
             fontFamily: "-moz-initial",
           }}
         >
-          <h2>WEB DEVELOPMENT</h2>
-          <h1>Personal Website</h1>
+          <h2>Mobile App</h2>
+          <h1>Police Man</h1>
           <p>
-            My personal project is written in React JS language and a brief
-            resume of me is uploaded on this project and the source code of the
-            project is available on GitHub for everyone to use.
+          This program provides you with the possibility of easy and faster use of Naja (Police) electronic services.
           </p>
           <p>
             <Grid container spacing={6} columns={14}>
               <Grid item xs={2}>
                 <img
-                  src={html}
+                  src={java}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 50 }}
                 />
               </Grid>
               <Grid item xs={2}>
                 <img
-                  src={css}
+                  src={oracle}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={figma}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={photoshop}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={physics}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 60 }}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -174,7 +154,7 @@ export default function Project() {
                     marginTop:10
                   }}
                 >
-                  VIEW CODE
+                  DOWNLOAD
                 </Button>
               </Grid>
             </Grid>
@@ -182,18 +162,19 @@ export default function Project() {
         </Grid>
         <Grid item xs={7}>
           <img
-            src={Logo}
+            src={Pm}
             alt="web pro"
-            style={{ height: 300, width: 700, borderStyle: "groove", marginLeft: 100 }}
+            style={{ height: 300, width: 700, marginLeft: 100,borderRadius: 30 }}
+            // , borderStyle: "groove" 
           />
         </Grid>
       </Grid>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{marginTop:10}}>
         <Grid item xs={7}>
           <img
-            src={Logo}
+            src={uruz}
             alt="web pro"
-            style={{ height: 300, width: 700, borderStyle: "groove" }}
+            style={{ height: 300, width: 700, borderRadius: 30 }}
           />
         </Grid>
         <Grid
@@ -205,18 +186,16 @@ export default function Project() {
             fontFamily: "-moz-initial",
           }}
         >
-          <h2>WEB DEVELOPMENT</h2>
-          <h1>Personal Website</h1>
+          <h2>APPLICATION & WEB PANEL</h2>
+          <h1>URUZ</h1>
           <p>
-            My personal project is written in React JS language and a brief
-            resume of me is uploaded on this project and the source code of the
-            project is available on GitHub for everyone to use.
+          In uruz, specialized training programs based on genetic and physical conditions are provided in a scientific and specialized manner by experienced and well-known trainers and specialized staff.
           </p>
           <p>
             <Grid container spacing={6} columns={14}>
               <Grid item xs={2}>
                 <img
-                  src={html}
+                  src={flag}
                   alt="Avatar"
                   class="image"
                   style={{ width: 40 }}
@@ -224,31 +203,7 @@ export default function Project() {
               </Grid>
               <Grid item xs={2}>
                 <img
-                  src={css}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={figma}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={photoshop}
-                  alt="Avatar"
-                  class="image"
-                  style={{ width: 40 }}
-                />
-              </Grid>
-              <Grid item xs={2}>
-                <img
-                  src={physics}
+                  src={java}
                   alt="Avatar"
                   class="image"
                   style={{ width: 40 }}

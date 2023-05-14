@@ -19,6 +19,7 @@ export default function AboutMe() {
 
   return (
     <div
+    id="abo"
       style={{
         marginTop: 170,
         maxWidth: "70%",
@@ -30,7 +31,7 @@ export default function AboutMe() {
         color: 'white'
       }}
     >
-      <h1 style={{ fontFamily: "-moz-initial",position: "absolute", left:500 }}>About me</h1>
+      <h1 style={{ fontFamily: "Mazius",position: "absolute", left:500 }}>About me</h1>
       <p style={{maxWidth:"30%", textAlign: 'left', position: "absolute", right: 500, marginTop: 35 }}>
         hello my name is javid molaei.<br /><br /> I love programming, I always try to be
         positive, punctual and good, I really appreciate team work and I have a

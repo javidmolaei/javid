@@ -3,15 +3,17 @@ import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
-import udemy from "../assest/udemy.jfif";
-import Sololearn from "../assest/sololearn.jfif";
-import Arasbaran from "../assest/arasbaran.jfif";
-import javaC from "../assest/javaC.jfif";
-import javaS from "../assest/javaS.jfif";
+import udemy from "../assest/udemy.png";
+import Sololearn from "../assest/sololearn.png";
+import Arasbaran from "../assest/arasbaran.png";
+import javaC from "../assest/javaC.png";
+import javaS from "../assest/javaS.png";
 import TreeView from "@mui/lab/TreeView";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import TreeItem from "@mui/lab/TreeItem";
+import IconButton from '@mui/material/IconButton';
+import Fingerprint from '@mui/icons-material/Fingerprint';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -27,13 +29,14 @@ export default function Certificate() {
       style={{
         textAlign: "center",
         color: "whitesmoke",
-        fontFamily: "-moz-initial",
+        fontFamily: "Mazius",
+        textShadow: "initial",
         marginTop: 200,
       }}
     >
       <h1
         style={{
-          fontFamily: "serif",
+          fontFamily: "Mazius",
         }}
       >
         Certificate & License
@@ -46,10 +49,21 @@ export default function Certificate() {
         sx={{ width: "80%", marginRight: "Auto", marginLeft: "Auto" }}
       >
         <Grid item xs>
-          <img src={udemy} alt="Avatar" class="image" style={{borderRadius: 100}} />
-          <h1>Udemy</h1>
-          <p>Project development using Java</p>
-          <TreeView
+          <img
+            src={udemy}
+            alt="Avatar"
+            class="image"
+            style={{ height: 150, width: 150 }}
+          />
+          <h1 style={{ fontFamily: "Mazius" }}>Udemy</h1>
+          <p style={{ fontFamily: "Avenir" }}>
+            Project development using Java 2023
+          </p>
+          <IconButton aria-label="fingerprint" color="error" size="small" href="udemy">
+            More...
+            <Fingerprint />
+          </IconButton>
+          {/* <TreeView
             defaultCollapseIcon={<ExpandMoreIcon />}
             defaultExpandIcon={<ChevronRightIcon />}
             sx={{
@@ -101,21 +115,36 @@ export default function Certificate() {
               <TreeItem nodeId="2" label="network applications in java" />
               <TreeItem nodeId="2" label="React and JavaScript" />
               <TreeItem nodeId="2" label="Visual studio code ultimate" />
-              {/* <a href="ude.my/UC-350d9b26-b5d7-487b-8dc8-7e58dcc98ed7">
+              <a href="ude.my/UC-350d9b26-b5d7-487b-8dc8-7e58dcc98ed7">
                 Bootstrap css & html certification
-              </a> */}
+              </a>
             </TreeItem>
-          </TreeView>
+          </TreeView> */}
         </Grid>
         <Grid item xs>
-          <img src={javaC} alt="Avatar" class="image" style={{borderRadius: 100 }} />
-          <h1>Javacup Association</h1>
+          <img
+            src={javaC}
+            alt="Avatar"
+            class="image"
+            style={{
+              height: 150,
+              width: 320,
+              background: "whitesmoke",
+              borderRadius: 50,
+            }}
+          />
+          <h1 style={{ fontFamily: "Mazius" }}>Javacup Association</h1>
           <p>JavaCup Certified Professional, Java SE 8 Programmer</p>
         </Grid>
         <Grid item xs>
-          <img src={javaS} alt="Avatar" class="image" style={{borderRadius: 100}} />
-          <h1>RIEMP</h1>
-          <p>
+          <img
+            src={javaS}
+            alt="Avatar"
+            class="image"
+            style={{ height: 150, width: 150 }}
+          />
+          <h1 style={{ fontFamily: "Mazius" }}>RIEMP</h1>
+          <p style={{ fontFamily: "Avenir" }}>
             Java School Certified Professional, Java EE 11 Application Developer
           </p>
         </Grid>
@@ -132,14 +161,28 @@ export default function Certificate() {
         }}
       >
         <Grid item xs>
-          <img src={Sololearn} alt="Avatar" class="image" style={{borderRadius: 100}} />
-          <h1>Sololearn</h1>
-          <p>Introduction to Programming Using Java</p>
+          <img
+            src={Sololearn}
+            alt="Avatar"
+            class="image"
+            style={{ height: 150, width: 150 }}
+          />
+          <h1 style={{ fontFamily: "Mazius" }}>Sololearn</h1>
+          <p style={{ fontFamily: "Avenir" }}>
+            Introduction to Programming Using Java
+          </p>
         </Grid>
         <Grid item xs>
-          <img src={Arasbaran} alt="Avatar" class="image" style={{borderRadius: 100}} />
-          <h1>Arasbaran Travel Agency</h1>
-          <p>Certified Tour Guide / Director</p>
+          <img
+            src={Arasbaran}
+            alt="Avatar"
+            class="image"
+            style={{ height: 150, width: 210 }}
+          />
+          <h1 style={{ fontFamily: "Mazius" }}>Arasbaran Travel Agency</h1>
+          <p style={{ fontFamily: "Avenir" }}>
+            Certified Tour Guide / Director
+          </p>
         </Grid>
       </Grid>
     </div>

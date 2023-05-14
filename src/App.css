@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Mazius";   /*Can be any text*/
+  src: local("MaziusRegular"),
+    url("./font/MaziusRegular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "NeutralFace";
+  src: local("NeutralFace"),
+    url("./font/NeutralFace-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: local("Avenir"),
+    url("./font/AvenirNextLTPro-Regular.otf") format("truetype");
+}
+
 .App {
   text-align: center;
 }

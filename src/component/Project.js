@@ -17,12 +17,13 @@ import Button from '@mui/material/Button';
 export default function Project() {
   return (
     <div
+    id="pro"
       style={{
         marginTop: 170,
         maxWidth: "81%",
         height: "150px",
         marginRight: "Auto",
-        marginLeft: "Auto",
+        marginLeft: "Auto"
       }}
     >
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>

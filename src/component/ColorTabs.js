@@ -30,12 +30,13 @@ export default function ColorTabs() {
         <Tabs value={value} onChange={handleChange} centered sx={{
             '& .MuiTabs-indicator': { backgroundColor: 'rgb(169,169,169)' },
             '& .MuiTab-root': { color: 'rgba(250, 250, 250, 1)'  },
-            '& .Mui-selected': { color: 'rgb(169,169,169)' },
-            marginTop: 2
+            '& .Mui-selected': { color: 'rgb(100,100,100)' },
+            marginTop: 2,
+            fontFamily: "NeutralFace"
           }}>
-            <Tab value="one" label="About"/>
-            <Tab value="two" label="Projects" />
-            <Tab value="three" label="GET IN TOUCH" style={{background: 'rgb(105,105,105)', borderRadius: 50}} />
+            <Tab value="one" label="About" href="#abo"/>
+            <Tab value="two" label="Projects" href="#pro" />
+            <Tab value="three" label="GET IN TOUCH" style={{background: 'rgb(250,250,250)',color:"black", borderRadius: 50}}  href="#getIn" />
           </Tabs>
         </Grid>
       </Grid>

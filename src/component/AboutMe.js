@@ -21,23 +21,22 @@ export default function AboutMe() {
     <div
     id="abo"
       style={{
-        marginTop: 100,
-        maxWidth: "70%",
+        marginTop: 80,
+        maxWidth: "80%",
         height: "200px",
-        marginRight: "Auto",
-        marginLeft: "Auto",
+        margin: "Auto",
         padding: 100,
         borderRadius: 50,
         color: 'white'
       }}
     >
-      <h1 style={{ fontFamily: "Mazius",position: "absolute", left:500 }}>About me</h1>
-      <p style={{maxWidth:"30%", textAlign: 'left', position: "absolute", right: 400, marginTop: 35 , fontFamily: "Avenir"}}>
-        hello my name is javid molaei.<br /><br /> I love programming, I always try to be
-        positive, punctual and good, I really appreciate team work and I have a
-        good team spirit.<br /> I have a lot of motivation to prove my abilities and I
-        am very hardworking to achieve my goals.<br /><br /> Seeking to secure a challenging
-        position as a Java Developer.
+      <h1 style={{ fontFamily: "Mazius",position: "absolute" }}>About me</h1>
+      <p style={{textAlign: 'left', fontFamily: "Avenir", marginTop:80, textJustify:"auto",fontSize:20,fontWeight:'normal', lineHeight: 1.6}}>
+      Hello, I'm Javid Molaei.<br /><br /> I'm passionate about programming and always strive to be positive, committed, and ethical. I highly value teamwork and have a strong team spirit. I have a great motivation to prove my abilities and I am highly diligent in achieving my goals.
+
+Currently, I'm actively seeking a challenging position as a Java Developer. I have a deep interest in programming and as an enthusiastic and dedicated individual, I always aim to maintain a positive mindset, consistent performance, and professional conduct. I consider collaboration and effective communication with the team as a fundamental value.
+
+I put forth my best efforts to establish myself as a skilled Java developer through hard work and continuous endeavor. I'm ready to apply my skills and provide innovative solutions as a Java Developer in a dynamic and challenging environment.
       </p>
     </div>
   );

@@ -90,6 +90,7 @@ export default function About() {
         <Grid xs={4} md={2} mdOffset={6}>
           <Button
             variant="outlined"
+            href="#pro"
             style={{ borderRadius: 25, color: "black", borderColor: "black" ,fontFamily: "NeutralFace",fontSize: 13}}
           >
             VIEW PROJECTS

@@ -45,7 +45,7 @@ export default function Interests() {
         textAlign: "center",
         color: "whitesmoke",
         fontFamily: "NeutralFace",
-        marginTop: 120
+        marginTop: 180
       }}
     >
       <h1

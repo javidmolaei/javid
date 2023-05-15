@@ -31,7 +31,7 @@ export default function Certificate() {
         color: "whitesmoke",
         fontFamily: "Mazius",
         textShadow: "initial",
-        marginTop: 200,
+        marginTop: 180,
       }}
     >
       <h1
@@ -59,8 +59,8 @@ export default function Certificate() {
           <p style={{ fontFamily: "Avenir" }}>
             Project development using Java 2023
           </p>
-          <IconButton aria-label="fingerprint" color="error" size="small" href="udemy">
-            More...
+          <IconButton aria-label="fingerprint" color="error" size="small" href="https://www.linkedin.com/in/javid-molaei-9b506b202/details/certifications/">
+             More
             <Fingerprint />
           </IconButton>
           {/* <TreeView
@@ -177,7 +177,7 @@ export default function Certificate() {
             src={Arasbaran}
             alt="Avatar"
             class="image"
-            style={{ height: 150, width: 210 }}
+            style={{ height: 150, width: 200 }}
           />
           <h1 style={{ fontFamily: "Mazius" }}>Arasbaran Travel Agency</h1>
           <p style={{ fontFamily: "Avenir" }}>

@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Link from '@mui/material/Link';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,14 +19,15 @@ export default function Footer() {
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3} sx={{fontSize:20, marginTop:2, marginBottom:5 ,fontFamily: "NeutralFace"}}>
         <Grid item xs>
-          About
+          <Link href="#abo" underline="none" color="whitesmoke">About</Link>
         </Grid>
         <Grid item xs>
-        Projects
+        
+        <Link href="#pro" underline="none" color="whitesmoke">Projects</Link>
+        </Grid>
+        <Grid item xs>
+        <Link href="#getIn" underline="none" color="whitesmoke">Contact</Link>
           
-        </Grid>
-        <Grid item xs>
-          Contact
         </Grid>
       </Grid>
     </Box>

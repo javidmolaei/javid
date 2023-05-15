@@ -36,7 +36,7 @@ export default function ColorTabs() {
           }}>
             <Tab value="one" label="About" href="#abo"/>
             <Tab value="two" label="Projects" href="#pro" />
-            <Tab value="three" label="GET IN TOUCH" style={{background: 'rgb(250,250,250)',color:"black", borderRadius: 50}}  href="#getIn" />
+            <Tab value="three" label="GET IN TOUCH" style={{background: 'rgb(250,250,250)',color:"black", borderRadius: 20}}  href="#getIn" />
           </Tabs>
         </Grid>
       </Grid>

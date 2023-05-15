@@ -91,7 +91,7 @@ export default function About() {
           <Button
             variant="outlined"
             href="#pro"
-            style={{ borderRadius: 25, color: "black", borderColor: "black" ,fontFamily: "NeutralFace",fontSize: 13}}
+            style={{ borderRadius: 25, color: "black", borderColor: "black" ,fontFamily: "NeutralFace",fontSize: 11, width:'auto'}}
           >
             VIEW PROJECTS
           </Button>
@@ -99,7 +99,7 @@ export default function About() {
         <Grid xs={4} xsOffset={4} md={2} mdOffset={0}>
           <Button
             variant="contained"
-            style={{ borderRadius: 25, color: "white", background: "black" , fontFamily: "NeutralFace",fontSize: 13 }}
+            style={{ borderRadius: 25, color: "white", background: "black" , fontFamily: "NeutralFace",fontSize: 11, width:'auto' }}
             href="#getIn"
           >
             GET IN TOUCH

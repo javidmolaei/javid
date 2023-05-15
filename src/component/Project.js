@@ -20,10 +20,9 @@ export default function Project() {
     <div
       id="pro"
       style={{
-        marginTop: 170,
-        maxWidth: "81%",
-        marginRight: "Auto",
-        marginLeft: "Auto",
+        marginTop: 220,
+        maxWidth: "80%",
+        margin: "auto"
       }}
     >
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -33,7 +32,7 @@ export default function Project() {
             alt="web pro"
             style={{
               height: 300,
-              width: 700,
+              width: '100%',
               borderRadius: 30,
               objectFit: "cover",
               objectPosition: "center",
@@ -69,7 +68,7 @@ export default function Project() {
                   src={html}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -77,7 +76,7 @@ export default function Project() {
                   src={css}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -85,7 +84,7 @@ export default function Project() {
                   src={figma}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -93,7 +92,7 @@ export default function Project() {
                   src={photoshop}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -101,7 +100,7 @@ export default function Project() {
                   src={physics}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -114,7 +113,7 @@ export default function Project() {
                       borderColor: "black",
                       background: "rgb(105,105,105)",
                       marginTop: 10,
-                      fontSize: 12,
+                      fontSize: 10,
                     }}
                   >
                     VIEW CODE
@@ -159,7 +158,7 @@ export default function Project() {
                   src={java}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 50 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -167,7 +166,7 @@ export default function Project() {
                   src={oracle}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 60 }}
+                  style={{ width: 45 }}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -180,7 +179,7 @@ export default function Project() {
                       borderColor: "black",
                       background: "rgb(105,105,105)",
                       marginTop: 10,
-                      fontSize: 12,
+                      fontSize: 11,
                     }}
                   >
                     DOWNLOAD
@@ -196,8 +195,8 @@ export default function Project() {
             alt="web pro"
             style={{
               height: 300,
-              width: 700,
-              marginLeft: 100,
+              width: "100%",
+              // marginLeft: 100,
               borderRadius: 30,
             }}
             // , borderStyle: "groove"
@@ -214,7 +213,7 @@ export default function Project() {
           <img
             src={uruz}
             alt="web pro"
-            style={{ height: 300, width: 700, borderRadius: 30 }}
+            style={{ height: 300, width: "100%", borderRadius: 30 }}
           />
         </Grid>
         <Grid
@@ -246,7 +245,7 @@ export default function Project() {
                   src={flag}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={2}>
@@ -254,7 +253,7 @@ export default function Project() {
                   src={java}
                   alt="Avatar"
                   class="image"
-                  style={{ width: 40 }}
+                  style={{ width: 35 }}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -267,7 +266,7 @@ export default function Project() {
                       borderColor: "black",
                       background: "rgb(105,105,105)",
                       marginTop: 10,
-                      fontSize: 12,
+                      fontSize: 10
                     }}
                   >
                     VIEW CODE

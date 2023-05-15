@@ -21,7 +21,7 @@ export default function AboutMe() {
     <div
     id="abo"
       style={{
-        marginTop: 170,
+        marginTop: 100,
         maxWidth: "70%",
         height: "200px",
         marginRight: "Auto",
@@ -32,7 +32,7 @@ export default function AboutMe() {
       }}
     >
       <h1 style={{ fontFamily: "Mazius",position: "absolute", left:500 }}>About me</h1>
-      <p style={{maxWidth:"30%", textAlign: 'left', position: "absolute", right: 500, marginTop: 35 }}>
+      <p style={{maxWidth:"30%", textAlign: 'left', position: "absolute", right: 400, marginTop: 35 , fontFamily: "Avenir"}}>
         hello my name is javid molaei.<br /><br /> I love programming, I always try to be
         positive, punctual and good, I really appreciate team work and I have a
         good team spirit.<br /> I have a lot of motivation to prove my abilities and I

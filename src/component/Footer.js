@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <div style={{width: "50%", marginRight:"auto", marginLeft:"auto",textAlign:"center", color:"whitesmoke",fontSize:14}}>
+    <div style={{width: "50%", margin:"auto",textAlign:"center", color:"whitesmoke",fontSize:14}}>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={3} sx={{fontSize:20, marginTop:2, marginBottom:5 ,fontFamily: "NeutralFace"}}>
         <Grid item xs>

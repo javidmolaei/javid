@@ -29,9 +29,7 @@ export default function GetIn() {
     <div id="getIn">
     <div
       style={{
-        marginTop: 1100,
         maxWidth: "70%",
-        // height: "200px",
         marginRight: "Auto",
         marginLeft: "Auto",
         padding: 100,
@@ -40,7 +38,7 @@ export default function GetIn() {
     >
       <h1
         style={{
-          fontFamily: "-moz-initial",
+          fontFamily: "Mazius",
           position: "inherit",
           textAlign: "center",
         }}
@@ -52,6 +50,7 @@ export default function GetIn() {
           position: "inherit",
           textAlign: "center",
           alignContent: "center",
+          fontFamily: "Avenir"
         }}
       >
         I’m currently open to new opportunities, inbox is always open!

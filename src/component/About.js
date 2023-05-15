@@ -27,7 +27,7 @@ export default function About() {
         backgroundImage: `url(${banner})`,
         backgroundSize: "cover",
         backgroundPosition: 'right',
-        marginTop: 170,
+        marginTop: 120,
         textAlign: "left",
         maxWidth: "70%",
         height: "200px",

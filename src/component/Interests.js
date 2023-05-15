@@ -44,18 +44,18 @@ export default function Interests() {
       style={{
         textAlign: "center",
         color: "whitesmoke",
-        fontFamily: "-moz-initial",
-        marginTop: 200,
+        fontFamily: "NeutralFace",
+        marginTop: 120
       }}
     >
       <h1
         style={{
-          fontFamily: "serif",
+          fontFamily: "Mazius"
         }}
       >
         Interests
       </h1>
-      <p>
+      <p style={{fontFamily: "Avenir"}}>
         Some things I enjoy learning about and doing
         <br />
         <br />
@@ -73,13 +73,12 @@ export default function Interests() {
                 sx={{
                   background: "rgb(39, 45, 43)",
                   borderRadius: 2,
-                  height: 150,
+                  // height: 150,
+                  padding: 7,
                   fontSize: 25,
                   color : 'white'
                 }}
               >
-                <br />
-                <br />
                 {item.name}
               </Item>
             </Grid>

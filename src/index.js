@@ -13,6 +13,7 @@ import Project from "./component/Project";
 import GetIn from "./component/GetIn";
 import Certificate from "./component/Certificate";
 import Footer from "./component/Footer";
+import Udemy from "./component/Udemy";
 import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -25,6 +26,7 @@ root.render(
       <AboutMe />
       <Interests />
       <Project />
+      {/* <Udemy /> */}
       <GetIn />
       <Footer />
     </BrowserRouter>

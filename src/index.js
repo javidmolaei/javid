@@ -13,22 +13,24 @@ import Project from "./component/Project";
 import GetIn from "./component/GetIn";
 import Certificate from "./component/Certificate";
 import Footer from "./component/Footer";
-import Udemy from "./component/Udemy";
+
 import { BrowserRouter } from "react-router-dom";
+import Blog from "./blog/Blog";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ColorTabs />
+      {/* <ColorTabs />
       <About />
       <Certificate />
       <AboutMe />
       <Interests />
       <Project />
-      {/* <Udemy /> */}
       <GetIn />
-      <Footer />
+      <Footer /> */}
+
+      <Blog />
     </BrowserRouter>
   </React.StrictMode>
 );

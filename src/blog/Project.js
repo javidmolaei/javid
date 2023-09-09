@@ -17,15 +17,10 @@ import Button from "@mui/material/Button";
 
 export default function Project() {
   return (
-    <div
+    <div className="project"
       id="pro"
-      style={{
-        marginTop: 220,
-        maxWidth: "80%",
-        marginRight: "auto",
-        marginLeft: "auto"
-      }}
     >
+      <h1 className="h1-man">projects</h1>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={7}>
           <img
@@ -35,7 +30,7 @@ export default function Project() {
               height: 300,
               width: '100%',
               borderRadius: 30,
-              objectFit: "cover",
+              // objectFit: "cover",
               objectPosition: "center",
             }}
           />
@@ -45,7 +40,7 @@ export default function Project() {
           xs={5}
           sx={{
             textAlign: "left",
-            color: "whitesmoke",
+            color: "black",
             fontFamily: "-moz-initial",
           }}
         >
@@ -136,7 +131,7 @@ export default function Project() {
           xs={5}
           sx={{
             textAlign: "left",
-            color: "whitesmoke",
+            color: "black",
             fontFamily: "-moz-initial",
           }}
         >
@@ -222,7 +217,7 @@ export default function Project() {
           xs={5}
           sx={{
             textAlign: "left",
-            color: "whitesmoke",
+            color: "black",
             fontFamily: "-moz-initial",
           }}
         >

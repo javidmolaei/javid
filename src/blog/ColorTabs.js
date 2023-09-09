@@ -1,0 +1,42 @@
+import * as React from "react";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import Logo from "../assest/logo.png";
+import Grid from "@mui/material/Grid";
+
+
+export default function ColorTabs() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const mystyle = {
+    fontWeight: "bold",
+  };
+
+  return (
+    <Box sx={{ flexGrow: 1}}>
+      <Grid container spacing={2} columns={15} style={{ borderBottom: 'ridge', borderWidth: '0.2px', borderColor: '#rgba(211,211,211,0.3)'}}>
+        <Grid item xs={11}>
+          <img src={Logo} style={{ height: 75 , marginLeft: 30}} />
+        </Grid>
+        <Grid item xs={4}>
+        <Tabs value={value} onChange={handleChange} centered sx={{
+            '& .MuiTabs-indicator': { backgroundColor: 'rgb(169,169,169)' },
+            '& .MuiTab-root': { color: 'rgba(250, 250, 250, 1)'  },
+            '& .Mui-selected': { color: 'rgb(100,100,100)' },
+            marginTop: 2,
+            fontFamily: "NeutralFace"
+          }}>
+            <Tab value="one" label="About" href="#abo"/>
+            <Tab value="two" label="Projects" href="#pro" />
+            <Tab value="three" label="GET IN TOUCH" style={{background: 'rgb(250,250,250)',color:"black", borderRadius: 20}}  href="#getIn" />
+          </Tabs>
+        </Grid>
+      </Grid>
+    </Box>
+  );
+}

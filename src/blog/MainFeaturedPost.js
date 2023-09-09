@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import Axe from '../assest/javaBanner.jpg';
 
 function MainFeaturedPost(props) {
   const { post } = props;
@@ -12,6 +13,7 @@ function MainFeaturedPost(props) {
   return (
     <Paper
       sx={{
+        borderRadius: 10,
         position: 'relative',
         backgroundColor: 'grey.800',
         color: '#fff',
@@ -19,13 +21,14 @@ function MainFeaturedPost(props) {
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
-        backgroundImage: `url(${post.image})`,
+        backgroundImage: `url(${Axe})`,
       }}
     >
       {/* Increase the priority of the hero background image */}
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <Box
         sx={{
+          borderRadius: 10,
           position: 'absolute',
           top: 0,
           bottom: 0,
@@ -35,7 +38,7 @@ function MainFeaturedPost(props) {
         }}
       />
       <Grid container>
-        <Grid item md={6}>
+        <Grid item md={8}>
           <Box
             sx={{
               position: 'relative',
@@ -43,13 +46,13 @@ function MainFeaturedPost(props) {
               pr: { md: 0 },
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography component="h1" variant="h3" color="inherit" gutterBottom style={{fontFamily: "Mazius"}}>
               {post.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            <Typography variant="h5" color="inherit" paragraph style={{fontFamily: "Avenir"}}>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
+            <Link variant="subtitle1" color="inherit" href="#">
               {post.linkText}
             </Link>
           </Box>

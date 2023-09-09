@@ -1,19 +1,30 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Logo from "../assest/logob.png";
 
 function Header(props) {
   const { sections, title } = props;
 
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const mystyle = {
+    fontWeight: "bold",
+  };
+
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Subscribe</Button>
+      <img src={Logo} style={{ height: 75}} />
+        {/* <Button size="small">Subscribe</Button> */}
         <Typography
           component="h2"
           variant="h5"
@@ -22,14 +33,25 @@ function Header(props) {
           noWrap
           sx={{ flex: 1 }}
         >
-          {title}
+          {/* {title} */}
         </Typography>
-        <IconButton>
+        {/* <IconButton>
           <SearchIcon />
         </IconButton>
         <Button variant="outlined" size="small">
           Sign up
-        </Button>
+        </Button> */}
+        <Tabs value={value} onChange={handleChange} sx={{
+            '& .MuiTabs-indicator': { backgroundColor: 'black' },
+            '& .MuiTab-root': { color: 'black'  },
+            '& .Mui-selected': { color: 'gray' },
+            fontFamily: "NeutralFace"
+          }}>
+            <Tab value="one" label="About" href="#abo"/>
+            <Tab value="four" label="blog" href="#blog" />
+            <Tab value="two" label="Projects" href="#pro" />
+            <Tab value="three" label="GET IN TOUCH" style={{background: 'silver',color:"black", borderRadius:10}}  href="#getIn" />
+          </Tabs>
       </Toolbar>
       <Toolbar
         component="nav"

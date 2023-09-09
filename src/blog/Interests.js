@@ -18,11 +18,11 @@ const itemDto = [
   },
   {
     id: "2",
-    name: "JavaScript",
+    name: "Java Script",
   },
   {
     id: "3",
-    name: "ReactJs",
+    name: "React Js",
   },
   {
     id: "4",
@@ -44,9 +44,6 @@ export default function Interests() {
 
       <h1
         className="h1-man"
-        style={{
-          fontFamily: "Mazius"
-        }}
       >
         Interests
       </h1>

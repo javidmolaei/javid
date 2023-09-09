@@ -6,6 +6,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 
+
 interface HeaderProps {
   sections: ReadonlyArray<{
     title: string;
@@ -16,6 +17,16 @@ interface HeaderProps {
 
 export default function Header(props: HeaderProps) {
   const { sections, title } = props;
+
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  const mystyle = {
+    fontWeight: "bold",
+  };
 
   return (
     <React.Fragment>
@@ -37,6 +48,7 @@ export default function Header(props: HeaderProps) {
         <Button variant="outlined" size="small">
           Sign up
         </Button>
+        
       </Toolbar>
       <Toolbar
         component="nav"

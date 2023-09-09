@@ -20,6 +20,9 @@ import About from './About';
 import Certificate from './Certificate';
 import AboutMe from './AboutMe';
 import Interests from './Interests';
+import Project from './Project';
+import AutoPlay from './AutoPlay';
+import SildeImage from '../additional/SlideImage';
 
 const sections = [
   { title: 'Podcast', url: '#' },
@@ -27,30 +30,57 @@ const sections = [
 ];
 
 const mainFeaturedPost = {
-  title: 'About me',
+  title: 'Java programming training',
   description:
-    "I'm passionate about programming and always strive to be positive, committed, and ethical. I highly value teamwork and have a strong team spirit. I have a great motivation to prove my abilities and I am highly diligent in achieving my goals.Currently, I'm actively seeking a challenging position as a Java Developer. I have a deep interest in programming and as an enthusiastic and dedicated individual, I always aim to maintain a positive mindset, consistent performance, and professional conduct. I consider collaboration and effective communication with the team as a fundamental value.I put forth my best efforts to establish myself as a skilled Java developer through hard work and continuous endeavor. I'm ready to apply my skills and provide innovative solutions as a Java Developer in a dynamic and challenging environment.",
-  image: 'https://source.unsplash.com/random?wallpapers',
+    "Why should we learn Java? Currently, Java programmers are one of the most popular workforces for many employers. Every day, many employers around the world are looking for Java programmers. These forces create and develop various applications and websites with the help of this programming language.",
+  image: 'https://source.unsplash.com/random/200x200?sig=1',
   imageText: 'main image description',
   linkText: 'Continue reading…',
 };
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
+    title: 'Introduction to Java',
+    date: 'Tuesday Jul 25 "episode 1"',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+    'آشنایی با جاوا، تاریخچه جاوا، ویژگی های جاوا و چرا جاوا مهم است؟',
+    image: 'https://drive.google.com/file/d/1DiTkBeedg7zlQYnlA3k3qSoNIY72wnsN/view?usp=sharing',
     imageLabel: 'Image Text',
+    address: 'https://javidmolaei.podbean.com/e/%d8%a2%d8%b4%d9%86%d8%a7%db%8c%db%8c-%d8%a8%d8%a7-%d8%ac%d8%a7%d9%88%d8%a7/'
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: 'Basic Java Concepts',
+    date: 'Tuesday Aug 08 "episode 2"',
     description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random?wallpapers',
+      'در این اپیزود راجع به مفاهیم اولیه جاوا نظیر محیط های توسعه نرم افزار، متغیرها، انواع داده اولیه، عملگرها، شروط حلقه ها و متد صحبت خواهیم کرد.      ',
+    image: 'https://picsum.photos/200/300',
     imageLabel: 'Image Text',
+    address: 'https://javidmolaei.podbean.com/e/%d9%85%d9%81%d8%a7%d9%87%db%8c%d9%85-%d8%a7%d9%88%d9%84%db%8c%d9%87-%d8%ac%d8%a7%d9%88%d8%a7/'
+  },
+  {
+    title: 'Basic concepts of Java Part II',
+    date: 'Tuesday Aug 15 "episode 3"',
+    description:
+      'توی این بخش راجب مفاهیم پایه ای جاوا از قبیل قوانين نام‌گذاری،  ورودی و خروجی، ساختار های کنترلی آرایه و رشته صحبت می‌کنیم.      ',
+    image: 'https://picsum.photos/200/300',
+    imageLabel: 'Image Text',
+    address: 'https://javidmolaei.podbean.com/e/%d9%85%d9%81%d8%a7%d9%87%db%8c%d9%85-%d9%be%d8%a7%db%8c%d9%87-%d8%ac%d8%a7%d9%88%d8%a7-%d8%a8%d8%ae%d8%b4-%d8%af%d9%88%d9%85/'
+  },{
+    title: 'Concepts of object oriented programming',
+    date: 'Saturday Aug 26 "episode 4"',
+    description:
+      'در این اپیزود در مورد مفاهیم برنامه نویسی شی گرا و استفاده آن مفاهیم در جاوا صحبت میکنیم',
+    image: 'https://picsum.photos/200/300',
+    imageLabel: 'Image Text',
+    address: 'https://javidmolaei.podbean.com/e/%d9%85%d9%81%d8%a7%d9%87%db%8c%d9%85-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c-%d8%b4%db%8c-%da%af%d8%b1%d8%a7/'
+  },{
+    title: 'Concepts of object oriented programming part two',
+    date: 'Sunday Aug 27 "episode 5"',
+    description:
+      'در این اپیزود نیز مفاهیم و اصول برنامه نویسی شی گرا مورد بررسی قرار میگیرد.',
+    image: 'https://picsum.photos/200/300',
+    imageLabel: 'Image Text',
+    address: 'https://javidmolaei.podbean.com/e/%d9%85%d9%81%d8%a7%d9%87%db%8c%d9%85-%d8%a8%d8%b1%d9%86%d8%a7%d9%85%d9%87-%d9%86%d9%88%db%8c%d8%b3%db%8c%d8%b4%db%8c-%da%af%d8%b1%d8%a7-%d8%a8%d8%ae/'
   },
 ];
 
@@ -94,7 +124,10 @@ export default function Blog() {
           <Certificate />
           <AboutMe />
           <Interests />
+          <Project />
+          <h1 className='h1-man'>Blog</h1>
           <MainFeaturedPost post={mainFeaturedPost} />
+          <h1 className='h1-man'>Radio Java</h1>
           <Grid container spacing={4}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
@@ -110,6 +143,8 @@ export default function Blog() {
             />
           </Grid>
         </main>
+        <SildeImage />
+        {/* <AutoPlay /> */}
       </Container>
       <Footer
         title="Footer"

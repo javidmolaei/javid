@@ -16,6 +16,12 @@
     url("./font/AvenirNextLTPro-Regular.otf") format("truetype");
 }
 
+@font-face {
+  font-family: "Ravi";
+  src: local("Ravi"),
+    url("./font/Digi\ Ravi\ Regular.otf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
@@ -114,7 +120,8 @@
 }
 
 .h1-man {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
+  font-family: "Mazius";
   margin: 100px auto;
   color: #1e221e;
   text-align: center;
@@ -151,6 +158,50 @@
   font-family: "NeutralFace";
 }
 
+.project {
+  /* max-width: "80%"; */
+  margin-right: "auto";
+  margin-left: "auto";
+}
+
+.get-in{
+    max-width: "70%";
+    margin-right: "Auto";
+    margin-left: "Auto";
+    padding: 100;
+    color: "black";
+}
+
+.icon{
+  color: black;
+}
+
+.ma-image{
+  height:100;
+  width:100;
+}
+
+.scroll {
+  max-height: 180px;
+  overflow: "auto"
+}
+
+.SildeImage {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+@import "react-slideshow-image/dist/styles.css";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @media screen and (max-width: 479px) {
   .About {
     /* background-color: red; */
@@ -173,10 +224,24 @@
     grid-column: unset;
     grid-row: unset;
   }
+
+  .h1-man {
+    /* font-family: sans-serif; */
+    font-family: "Mazius";
+    margin: 100px auto;
+    color: #1e221e;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+  }
+
+  
+  
+
 }
 
-
-@media screen and (min-width: 479px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 960px) {
   .grid-container-ui {
     display: grid;
     grid-template-columns: 400px 400px;
@@ -195,4 +260,16 @@
     grid-column: unset;
     grid-row: unset;
   }
+
+  .h1-man {
+    /* font-family: sans-serif; */
+    font-family: "Mazius";
+    margin: 100px auto;
+    color: #1e221e;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position: relative;
+  }
+
 }
